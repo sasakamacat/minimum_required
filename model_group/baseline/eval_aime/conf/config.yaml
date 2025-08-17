@@ -1,0 +1,19 @@
+dataset: opencompass/AIME2025
+
+provider: vllm # [vllm]
+
+base_url: http://localhost:8000/v1
+
+# model: Qwen/Qwen3-32B
+model: /home/Competition2025/P12/P12U007/model/Qwen3-32B
+# model: Qwen/QwQ-32B
+# model: deepseek-ai/DeepSeek-R1-Distill-Qwen-32B
+# model: Qwen/Qwen3-32B
+max_completion_tokens: 100000
+reasoning: true
+
+# sample with multimodal is 2500, so text-only sample is about 2400
+num_workers: 2500
+max_samples: 2500
+
+judge: /home/Competition2025/P12/P12U007/model/Qwen3-32B
